@@ -109,19 +109,23 @@ AIdeliverymodel/
 ├── 05-product-operations/        # Run, observability, maintenance, ownership
 ├── 06-learning-system/           # Continuous learning and maturity
 ├── templates/                    # Ready-to-fill working documents
+│   └── discovery/                # ⭐ Workshop canvas kit (run a Discovery session)
+├── examples/                     # Worked, generic examples
 └── prompts/                      # AI agent role prompts for Discovery
 ```
 
 ## Start here
 
-If you are about to run your **first Discovery workshop**, read in this order:
+**Running a Discovery workshop this week?** Go straight to the **[AI-native Discovery Workshop Kit](templates/discovery/00-workshop-readme.md)** — a complete, ready-to-use set of canvases for a 90–120 minute session, with a [single working workbook](templates/discovery/ai-discovery-workbook.md) and a [partially filled example](examples/discovery/automated-reporting-example.md).
+
+Otherwise, if you are about to run your **first Discovery workshop**, read in this order:
 
 1. [00-vision/manifesto.md](00-vision/manifesto.md) — the stance in one page.
 2. [00-vision/principles.md](00-vision/principles.md) — the principles you will apply.
 3. [02-ai-discovery/overview.md](02-ai-discovery/overview.md) — how AI-native Discovery works.
 4. [02-ai-discovery/augmented-workshop.md](02-ai-discovery/augmented-workshop.md) — how to run the augmented workshop.
-5. [templates/discovery-workshop-agenda.md](templates/discovery-workshop-agenda.md) — copy this and schedule your session.
-6. [templates/ai-impact-canvas.md](templates/ai-impact-canvas.md) — copy this and fill it during and after the workshop.
+5. [templates/discovery/00-workshop-readme.md](templates/discovery/00-workshop-readme.md) — the workshop kit: agenda, canvases, facilitator guidance.
+6. [templates/ai-impact-canvas.md](templates/ai-impact-canvas.md) — consolidate the session into the central canvas.
 7. [prompts/](prompts/) — use these role prompts to run the specialized AI analyses.
 
 If you are a **leader deciding whether to build or buy**, start with [00-vision/from-buy-to-make.md](00-vision/from-buy-to-make.md) and [01-operating-model/overview.md](01-operating-model/overview.md).

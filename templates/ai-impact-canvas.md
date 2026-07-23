@@ -1,6 +1,8 @@
 # AI Impact Canvas — Template
 
 > Copy this file per product/need and fill it in. Concept and guidance: [../02-ai-discovery/ai-impact-canvas.md](../02-ai-discovery/ai-impact-canvas.md).
+>
+> ⭐ **Running a workshop?** Fill the granular canvases of the **[Discovery Workshop Kit](discovery/00-workshop-readme.md)** during the session, then consolidate them here. Mapping: [01](discovery/01-business-value-canvas.md) → Business Value · [02](discovery/02-process-and-users-canvas.md) → Process, Users · [03](discovery/03-data-and-connectors-canvas.md) → Data Sources, Connectors, Data Quality · [04](discovery/04-visualization-and-output-canvas.md) → Visualization · [05](discovery/05-ai-capability-canvas.md) → AI Capabilities · [06](discovery/06-architecture-options-canvas.md) → Architecture · [07](discovery/07-security-and-governance-canvas.md) → Security and Compliance · [08](discovery/08-build-impact-canvas.md) → Delivery · [09](discovery/09-run-and-observability-canvas.md) → Product Operations, Observability, Maintenance · [10](discovery/10-ownership-and-responsibility-canvas.md) → Ownership · [11](discovery/11-cost-risk-and-evolution-canvas.md) → Cost, Risks, Evolution · [12](discovery/12-open-questions-and-decisions.md) → Open Questions.
 
 **Product / Need:** _____________________________________
 **Sponsor:** ______________  **Product Owner:** ______________

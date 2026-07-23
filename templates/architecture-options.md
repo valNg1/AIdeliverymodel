@@ -1,6 +1,8 @@
 # Architecture Options — Template
 
 > Output of the [Solution Architect](../prompts/solution-architect.md) role. Feeds the [AI Impact Canvas](ai-impact-canvas.md).
+>
+> ⭐ **In a workshop**, use the [Architecture Options Canvas](discovery/06-architecture-options-canvas.md) to compare the three standard directions (platform-first / custom / hybrid) and produce a shortlist. This template is for the deeper post-workshop analysis.
 
 **Product / Need:** ______________  **Analyst (human/AI):** ______________  **Date:** ____________
 

@@ -4,6 +4,8 @@
 
 The supervision matrix is the core operational instrument of the Run. It turns "we will keep an eye on it" into an explicit, owned, testable plan. Every object worth observing gets one row.
 
+> ⭐ **To draft one in a workshop**, use the [Run and Observability Canvas](../templates/discovery/09-run-and-observability-canvas.md), which pre-lists the objects to cover (data source, connector, API, transformation job, application, model, prompt, knowledge base, generated narrative, user feedback, cost, security event, dependency, SLA). A filled illustration: [automated reporting example](../examples/discovery/automated-reporting-example.md).
+
 ## Columns
 
 | Column | Meaning |

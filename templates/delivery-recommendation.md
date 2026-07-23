@@ -1,6 +1,8 @@
 # Delivery Recommendation — Template
 
 > Output of the [Delivery Lead](../prompts/delivery-lead.md) role. Feeds the [AI Impact Canvas](ai-impact-canvas.md).
+>
+> ⭐ **In a workshop**, use the [Build Impact Canvas](discovery/08-build-impact-canvas.md) and close with the [Go / No-Go Recommendation](discovery/14-go-no-go-recommendation.md). This template is for the deeper post-workshop analysis.
 
 **Product / Need:** ______________  **Analyst (human/AI):** ______________  **Date:** ____________
 

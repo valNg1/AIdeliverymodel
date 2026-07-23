@@ -1,6 +1,8 @@
 # Business Analysis — Template
 
 > Output of the [Business Analyst](../prompts/business-analyst.md) role. Feeds the [AI Impact Canvas](ai-impact-canvas.md).
+>
+> ⭐ **In a workshop**, use the [Business Value Canvas](discovery/01-business-value-canvas.md) and the [Process and Users Canvas](discovery/02-process-and-users-canvas.md). This template is for the deeper post-workshop analysis.
 
 **Product / Need:** ______________  **Analyst (human/AI):** ______________  **Date:** ____________
 

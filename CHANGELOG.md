@@ -6,6 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project aims to follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
 for its documentation releases.
 
+## [Unreleased]
+
+### Added
+- **AI-native Discovery Workshop Kit** (`templates/discovery/`): a ready-to-use set of 15 canvases for a 90–120 minute Discovery workshop, covering business value, process and users, data and connectors, visualization and output, AI capability, architecture options, security and governance, build impact, run and observability, ownership and responsibility, cost/risk/evolution, open questions and decisions, synthesis, and a Go / No-Go recommendation.
+- **AI Discovery Workbook** (`templates/discovery/ai-discovery-workbook.md`): a single working support assembling every canvas in workshop order.
+- Timed 120-minute agenda with facilitator questions, expected evidence, canvas to complete and decision to obtain per sequence, plus a Facilitator Guidance section.
+- **Generic worked example** (`examples/discovery/automated-reporting-example.md`): partially filled Discovery for automated management reporting with generated narratives.
+
+### Changed
+- Cross-linked the workshop kit from the README, the AI Impact Canvas, the augmented workshop, discovery deliverables, the observability matrix, the agent prompts, and the analysis templates.
+- Reframed `templates/discovery-workshop-agenda.md` as the short generic agenda, pointing to the kit for full sessions.
+
 ## [0.1.0] — 2026-07-22
 
 ### Added

@@ -2,6 +2,8 @@
 
 AI-native Discovery produces a small, connected set of deliverables. Together they let a team move to Design with the full Build and Run picture visible and ownership accepted.
 
+> ⭐ **Producing them in a workshop:** the [Discovery Workshop Kit](../templates/discovery/00-workshop-readme.md) generates every deliverable below in a single 90–120 minute session, using the [workbook](../templates/discovery/ai-discovery-workbook.md) as the working support.
+
 ## Primary deliverable
 
 ### 1. AI Impact Canvas (consolidated)
@@ -45,7 +47,14 @@ The explicit list of unresolved *Unknown* and *Decision Required* items, each wi
 
 A first version of the supervision matrix: what will be observed, how often, and by whom.
 
+- Workshop canvas: [../templates/discovery/09-run-and-observability-canvas.md](../templates/discovery/09-run-and-observability-canvas.md)
 - Template and model: [../05-product-operations/observability-matrix.md](../05-product-operations/observability-matrix.md)
+
+### 7. Go / No-Go recommendation
+
+A single, defensible recommendation — Go to Prototype, Go to MVP, Return to Discovery, or Stop — prepared for a named human decision-maker.
+
+- Template: [../templates/discovery/14-go-no-go-recommendation.md](../templates/discovery/14-go-no-go-recommendation.md)
 
 ## Definition of done for Discovery
 

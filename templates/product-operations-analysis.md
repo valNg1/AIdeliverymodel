@@ -1,6 +1,8 @@
 # Product Operations Analysis — Template
 
 > ⚠️ Experimental area. Output of the [Product Operations Lead](../prompts/product-operations-lead.md) role. Feeds the [AI Impact Canvas](ai-impact-canvas.md) and the [observability matrix](../05-product-operations/observability-matrix.md).
+>
+> ⭐ **In a workshop**, use the [Run and Observability Canvas](discovery/09-run-and-observability-canvas.md), which pre-lists the objects to supervise. This template is for the deeper post-workshop analysis.
 
 **Product / Need:** ______________  **Analyst (human/AI):** ______________  **Date:** ____________
 

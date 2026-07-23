@@ -1,6 +1,8 @@
 # Data Analysis — Template
 
 > Output of the [Data Architect](../prompts/data-architect.md) role. Feeds the [AI Impact Canvas](ai-impact-canvas.md).
+>
+> ⭐ **In a workshop**, use the [Data and Connectors Canvas](discovery/03-data-and-connectors-canvas.md), which includes a per-source inventory. This template is for the deeper post-workshop analysis.
 
 **Product / Need:** ______________  **Analyst (human/AI):** ______________  **Date:** ____________
 

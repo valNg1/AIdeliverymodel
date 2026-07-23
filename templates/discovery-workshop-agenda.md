@@ -1,5 +1,9 @@
 # Discovery Workshop Agenda — Template
 
+> ⭐ **Running a full 90–120 minute session?** Use the **[AI-native Discovery Workshop Kit](discovery/00-workshop-readme.md)** instead — it provides a detailed timed agenda, 15 canvases, facilitator guidance and a [single working workbook](discovery/ai-discovery-workbook.md).
+>
+> This file remains the **short, generic agenda** for lighter or custom-length sessions.
+
 > Copy and adapt for your session. Method: [../02-ai-discovery/augmented-workshop.md](../02-ai-discovery/augmented-workshop.md).
 
 **Product / Need:** ______________  **Date:** ____________  **Facilitator:** ______________
@@ -47,6 +51,7 @@ By the end of this workshop we will have a rich, accurate corpus and a first-pas
 
 ## After the workshop
 
+- [ ] Complete the [Go / No-Go recommendation](discovery/14-go-no-go-recommendation.md).
 - [ ] Assemble the corpus (transcript + documents + notes + diagrams + constraints).
 - [ ] Run the specialized analyses using the [prompts](../prompts/).
 - [ ] Consolidate into the [AI Impact Canvas](ai-impact-canvas.md) via the [orchestrator](../prompts/orchestrator.md).

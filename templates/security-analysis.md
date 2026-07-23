@@ -1,6 +1,8 @@
 # Security Analysis — Template
 
 > Output of the [Security Reviewer](../prompts/security-reviewer.md) role. Feeds the [AI Impact Canvas](ai-impact-canvas.md).
+>
+> ⭐ **In a workshop**, use the [Security and Governance Canvas](discovery/07-security-and-governance-canvas.md), which also covers privacy/RGPD, prompt risk and human oversight. This template is for the deeper post-workshop analysis.
 
 **Product / Need:** ______________  **Analyst (human/AI):** ______________  **Date:** ____________
 

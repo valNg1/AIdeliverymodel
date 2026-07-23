@@ -4,6 +4,8 @@ The AI Impact Canvas is the central deliverable of AI-native Discovery. It is a 
 
 This page explains the canvas. To **use** it, copy the operational template: [templates/ai-impact-canvas.md](../templates/ai-impact-canvas.md).
 
+> ⭐ **In a workshop**, fill the granular per-topic canvases of the **[Discovery Workshop Kit](../templates/discovery/00-workshop-readme.md)** first, then consolidate them into this canvas. The kit's canvases map one-to-one onto the dimensions below.
+
 ## Why a canvas
 
 Requirements documents describe *what* is wanted. They rarely show how a choice ripples through data, architecture, security, cost, supervision, and ownership. The canvas exists to make those ripples visible **in one place**, so the business can see and accept the downstream impact of its choices.

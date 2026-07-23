@@ -2,6 +2,8 @@
 
 An augmented Discovery workshop is a facilitated session in which specialized AI roles analyze the same shared corpus and produce focused analyses, which a human then consolidates and arbitrates.
 
+> ⭐ **To run one:** use the ready-made **[AI-native Discovery Workshop Kit](../templates/discovery/00-workshop-readme.md)** — timed agenda, 15 canvases, facilitator guidance, [single workbook](../templates/discovery/ai-discovery-workbook.md), and a [worked example](../examples/discovery/automated-reporting-example.md).
+
 ## Principle
 
 > **AI produces the analyses. Humans build consensus and make decisions.**
@@ -37,7 +39,7 @@ Details and handling: [inputs-and-workflow.md](inputs-and-workflow.md).
 ## Workshop flow
 
 **Before — prepare the corpus.**
-Collect documents, constraints, and any prior material. Confirm scope and the business question. Use the [workshop agenda template](../templates/discovery-workshop-agenda.md).
+Collect documents, constraints, and any prior material. Confirm scope and the business question. Use the [workshop kit agenda](../templates/discovery/00-workshop-readme.md) (or the [short generic agenda](../templates/discovery-workshop-agenda.md) for lighter sessions).
 
 **During — capture, don't decide.**
 Facilitate the business conversation and capture a good transcript and notes. The goal of the live session is a rich, accurate corpus — not premature conclusions.

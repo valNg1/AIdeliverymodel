@@ -1,6 +1,8 @@
 # Ownership Matrix — Template
 
 > Copy per product. Model: [../05-product-operations/ownership-model.md](../05-product-operations/ownership-model.md).
+>
+> ⭐ **In a workshop**, use the [Ownership and Responsibility Canvas](discovery/10-ownership-and-responsibility-canvas.md) — a fuller RACI across the eleven generic roles — then carry the result here as the product-level record.
 
 **Product / Need:** ______________  **Product Owner (single, accountable):** ______________  **Date:** ____________
 

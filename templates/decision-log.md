@@ -1,6 +1,8 @@
 # Decision Log — Template
 
 > Copy per product. Records every decision made during Discovery and beyond, including deferred decisions. Referenced throughout the [lifecycle](../01-operating-model/lifecycle.md).
+>
+> ⭐ **During a workshop**, capture decisions live in [12 Open Questions and Decisions](discovery/12-open-questions-and-decisions.md), then transfer them here as the durable product-level log.
 
 **Product / Need:** ______________  **Owner of this log:** ______________
 

@@ -38,6 +38,8 @@ Every role prompt contains the same nine sections:
 4. Run the [orchestrator](orchestrator.md) to consolidate into the [AI Impact Canvas](../02-ai-discovery/ai-impact-canvas.md).
 5. Hold human arbitration; record decisions in the [decision log](../templates/decision-log.md).
 
+> ⭐ **Around a live workshop:** run these prompts on the pre-workshop corpus to **pre-fill** the canvases of the [Discovery Workshop Kit](../templates/discovery/00-workshop-readme.md), then use the session to challenge and correct them — or run them afterwards on the session transcript to deepen each analysis. Either way, the arbitration stays human.
+
 ## Ground rules for all roles
 
 - Use the status vocabulary everywhere: `Known` · `Assumed` · `Unknown` · `Decision Required`.
