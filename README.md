@@ -91,6 +91,8 @@ AI accelerates analysis; it does not own decisions. In this model, humans are re
 
 Human validation is a principle, not a formality. See [03-delivery/human-validation.md](03-delivery/human-validation.md).
 
+AI agents also work inside a **declared execution budget**: effort, tool calls, deliverables, and stopping criteria are stated before work starts, and the agent hard-stops rather than silently overrunning. See [03-delivery/agent-execution-budget.md](03-delivery/agent-execution-budget.md) — a controlled partial delivery is preferable to an uncontrolled complete delivery.
+
 ## Repository structure
 
 ```
@@ -104,14 +106,14 @@ AIdeliverymodel/
 ├── 00-vision/                    # Why this model, and its stance
 ├── 01-operating-model/           # The operating model and lifecycle
 ├── 02-ai-discovery/              # AI-native Discovery and the AI Impact Canvas
-├── 03-delivery/                  # Delivery practices (knowledge, references, design)
+├── 03-delivery/                  # Delivery practices (knowledge, references, design, agent budget)
 ├── 04-platform-and-governance/   # Platform foundations, security, governance
 ├── 05-product-operations/        # Run, observability, maintenance, ownership
 ├── 06-learning-system/           # Continuous learning and maturity
 ├── templates/                    # Ready-to-fill working documents
 │   └── discovery/                # ⭐ Workshop canvas kit (run a Discovery session)
 ├── examples/                     # Worked, generic examples
-└── prompts/                      # AI agent role prompts for Discovery
+└── prompts/                      # AI agent role prompts for Discovery + delivery-time prompts
 ```
 
 ## Start here

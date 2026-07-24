@@ -9,6 +9,8 @@ for its documentation releases.
 ## [Unreleased]
 
 ### Added
+- **Agent Execution Budget** (`03-delivery/agent-execution-budget.md`): every AI-agent task declares estimated effort, tool-call budget, deliverables, and stopping criteria. Control thresholds at 90% / 100% / 110% of the estimate, with a mandatory hard-stop procedure and a ban on silent overruns.
+- **Agent Execution Budget prompt** (`prompts/agent-execution-budget.md`): reusable copy-paste template to declare the budget at the start of a coding task.
 - **AI-native Discovery Workshop Kit** (`templates/discovery/`): a ready-to-use set of 15 canvases for a 90–120 minute Discovery workshop, covering business value, process and users, data and connectors, visualization and output, AI capability, architecture options, security and governance, build impact, run and observability, ownership and responsibility, cost/risk/evolution, open questions and decisions, synthesis, and a Go / No-Go recommendation.
 - **AI Discovery Workbook** (`templates/discovery/ai-discovery-workbook.md`): a single working support assembling every canvas in workshop order.
 - Timed 120-minute agenda with facilitator questions, expected evidence, canvas to complete and decision to obtain per sequence, plus a Facilitator Guidance section.

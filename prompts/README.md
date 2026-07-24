@@ -40,6 +40,14 @@ Every role prompt contains the same nine sections:
 
 > ⭐ **Around a live workshop:** run these prompts on the pre-workshop corpus to **pre-fill** the canvases of the [Discovery Workshop Kit](../templates/discovery/00-workshop-readme.md), then use the session to challenge and correct them — or run them afterwards on the session transcript to deepen each analysis. Either way, the arbitration stays human.
 
+## Delivery-time prompts
+
+These prompts are not Discovery roles. They frame how an AI agent executes work.
+
+| Prompt | Purpose |
+|---|---|
+| [agent-execution-budget.md](agent-execution-budget.md) | Declare an effort and tool-call budget, with stopping criteria and a hard-stop procedure. See the rule: [Agent Execution Budget](../03-delivery/agent-execution-budget.md). |
+
 ## Ground rules for all roles
 
 - Use the status vocabulary everywhere: `Known` · `Assumed` · `Unknown` · `Decision Required`.
