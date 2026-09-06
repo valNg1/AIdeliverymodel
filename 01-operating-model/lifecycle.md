@@ -34,8 +34,9 @@ The AI Delivery Model runs a repeatable lifecycle from business need to running 
 
 **Goal:** produce the product with the human + AI delivery team.
 
+- Start from a ready **Intent** and deliver in short slices — see [intent-based development](../03-delivery/intent-based-development.md).
 - Assemble from [reusable building blocks](../03-delivery/reusable-assets.md).
-- Capture knowledge as you go ([knowledge-first](../03-delivery/knowledge-first.md)).
+- Capture knowledge as you go into the Living Specification ([knowledge-first](../03-delivery/knowledge-first.md)).
 - Keep the AI Impact Canvas current as facts change.
 
 **Exit criteria:** a working increment ready for validation.

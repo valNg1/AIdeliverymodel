@@ -93,6 +93,8 @@ Human validation is a principle, not a formality. See [03-delivery/human-validat
 
 AI agents also work inside a **declared execution budget**: effort, tool calls, deliverables, and stopping criteria are stated before work starts, and the agent hard-stops rather than silently overrunning. See [03-delivery/agent-execution-budget.md](03-delivery/agent-execution-budget.md) — a controlled partial delivery is preferable to an uncontrolled complete delivery.
 
+Delivery itself starts from a structured **Intent** rather than a frozen spec, and grows a **Living Specification** through short loops — *Intent before Build. Specification through Delivery.* See [03-delivery/intent-based-development.md](03-delivery/intent-based-development.md).
+
 ## Repository structure
 
 ```
@@ -106,7 +108,7 @@ AIdeliverymodel/
 ├── 00-vision/                    # Why this model, and its stance
 ├── 01-operating-model/           # The operating model and lifecycle
 ├── 02-ai-discovery/              # AI-native Discovery and the AI Impact Canvas
-├── 03-delivery/                  # Delivery practices (knowledge, references, design, agent budget)
+├── 03-delivery/                  # Delivery practices (intent, knowledge, references, design, agent budget)
 ├── 04-platform-and-governance/   # Platform foundations, security, governance
 ├── 05-product-operations/        # Run, observability, maintenance, ownership
 ├── 06-learning-system/           # Continuous learning and maturity

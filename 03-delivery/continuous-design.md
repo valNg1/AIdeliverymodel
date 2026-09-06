@@ -13,6 +13,10 @@ Understanding grows as a product is built and run. Freezing a design at the end 
 - The canvas and the [decision log](../templates/decision-log.md) are living documents, updated across the [lifecycle](../01-operating-model/lifecycle.md).
 - Design spans Design → Build → Operate; it does not stop at handoff.
 
+## Applied to the specification: Intent-Based Development
+
+Continuous Design is not limited to the design; it extends to the specification itself. [Intent-Based Development](intent-based-development.md) applies the same reflex during Build: start from a structured **Intent** rather than a frozen spec, and let a **Living Specification** grow through short delivery loops. *Intent before Build. Specification through Delivery.*
+
 ## Guardrails
 
 - Continuous does not mean unmanaged: changes are recorded and owned.

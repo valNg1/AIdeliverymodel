@@ -26,7 +26,15 @@ Shared vocabulary for the AI Delivery Model. Terms are listed alphabetically. Ke
 
 - **Human Validation** — The principle that humans validate outputs, arbitrate conflicts, and make final decisions.
 
+- **Intent** — A Minimum Viable Specification that seeds development: problem, users, expected outcome, scope / out of scope, constraints, acceptance signal, and decision owner. Small but explicit, not a vague idea. See [03-delivery/intent-based-development.md](03-delivery/intent-based-development.md).
+
+- **Intent-Based Development** — The delivery practice of starting Build from a structured Intent rather than a frozen specification, then growing a Living Specification through short delivery loops. *Intent before Build. Specification through Delivery.* See [03-delivery/intent-based-development.md](03-delivery/intent-based-development.md).
+
+- **Intent Readiness Gate** — A lightweight human check, before development starts, that the Intent is ready to build against: problem understood, users identified, outcome defined, scope boundaries clear, critical constraints known, decision owner identified, and at least one concrete acceptance scenario expressible. See [03-delivery/intent-based-development.md](03-delivery/intent-based-development.md).
+
 - **Knowledge First** — The principle that knowledge is captured and reused as a first-class asset.
+
+- **Living Specification** — A specification that is maintained continuously alongside the product, capturing business intent, business rules, acceptance criteria, architecture decisions, test evidence, operational knowledge, and decision rationale — making the repository the durable memory of the product. See [03-delivery/intent-based-development.md](03-delivery/intent-based-development.md).
 
 - **Observability matrix** — A supervision table that defines, for each object to observe, its metric or event, frequency, threshold, responsible owner, action, escalation path, evidence, and review date. See [05-product-operations/observability-matrix.md](05-product-operations/observability-matrix.md).
 
