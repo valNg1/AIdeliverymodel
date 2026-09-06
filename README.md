@@ -134,6 +134,11 @@ Otherwise, if you are about to run your **first Discovery workshop**, read in th
 
 If you are a **leader deciding whether to build or buy**, start with [00-vision/from-buy-to-make.md](00-vision/from-buy-to-make.md) and [01-operating-model/overview.md](01-operating-model/overview.md).
 
+## Worked examples
+
+- **[France Judo — Excellence Judo LMS](examples/hazumi-excellence-judo/00-overview.md)** — a fictionalized case walking a business need from Intent through AI-native Discovery, the AI Impact Canvas, and a first delivery loop to a Living Specification. The best end-to-end illustration of how the practices fit together.
+- **[Automated reporting](examples/discovery/automated-reporting-example.md)** — a partially filled Discovery for the workshop kit.
+
 ## Status and scope of v0.1
 
 - This release provides the **structure and foundational content** of the framework.
