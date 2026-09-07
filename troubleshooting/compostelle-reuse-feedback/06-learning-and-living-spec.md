@@ -2,8 +2,12 @@
 
 > Applied case — Compostelle. Applies [Living Specification](../../03-delivery/intent-based-development.md#living-specification) and [Knowledge First](../../03-delivery/knowledge-first.md). Only items the implementation actually validated are marked KNOWN.
 
+> **Test evidence:** commit `bc32314` was read and exercised via a generated [test book](07-test-book.md) — **274/274 automated pass**, typecheck clean, **no defects**. Human acceptance (idiomatic quality, mobile conciseness, UI, acceptance signal) remains **HUMAN VALIDATION REQUIRED**.
+
 ## KNOWN (validated by implementation + tests)
 - The Reuse result can be expressed as one structured contract (`assessment`, `correctedSentence`, `mainCorrections`, `retrySuggested`) derived purely from the existing evaluation — verified by `reuseFeedback.test.ts` and a clean type build.
+- The mapping is **total**: blank input and a `needs-correction` with no issueType both yield a well-formed contract (edge tests E01/E02 in the [test book](07-test-book.md)).
+- Error *nature* accuracy (spelling vs grammar vs tense vs preposition) is inherited from LanguageTool, **not** decided by the fix — so it is not covered by deterministic tests.
 - A correct sentence yields "correct" with **no invented corrections** (test 1 + the idiomatic-limitation test).
 - An understandable-but-incorrect sentence yields a minimally corrected version + explained corrections + retry (tests 2, 4).
 - The current engine (LanguageTool) **cannot** produce an idiomatic alternative — the field stays `undefined` (locked by test).
