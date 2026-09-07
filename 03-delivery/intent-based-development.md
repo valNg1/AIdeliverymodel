@@ -97,6 +97,20 @@ Then I can identify the items requiring remediation.
 
 If the gate cannot pass, the answer is not "specify everything." It is to sharpen the Intent until at least one acceptance scenario is expressible — then start. Missing detail beyond that is resolved *through* delivery, not before it.
 
+## Prototype before specification
+
+Once a problem is exposed, the fastest way to sharpen intent is often not to write more specification — it is to make the intended behaviour **tangible**.
+
+> **After a problem is exposed, AI should rapidly make the intended behaviour tangible through a prototype. Human feedback on that prototype is then converted into refined intent, acceptance criteria, and implementation guidance.**
+
+The prototype is a throwaway artifact whose only job is to give humans something concrete to react to. It sits between problem exposure and refined intent:
+
+```
+Problem exposed → AI prototype (tangible behaviour) → Human validation → Refined Intent → Acceptance criteria → Build
+```
+
+This does not weaken *Intent before Build*. The prototype **serves** the Intent: it is how the Capability Intent gets sharp enough to build against, faster than prose could. A worked case: [Compostelle — Reuse feedback](../troubleshooting/compostelle-reuse-feedback/01-ai-prototype.md).
+
 ## Delivery loop
 
 Once the Intent is ready, delivery runs in short loops. Each loop improves **both** the product and the product knowledge base.
@@ -292,5 +306,6 @@ At each loop the product improves **and** the Living Specification grows — the
 - [Continuous Design](continuous-design.md) · [Knowledge First](knowledge-first.md) · [Reference-Driven Delivery](reference-driven-delivery.md) · [Human Validation](human-validation.md) · [Continuous Learning](../06-learning-system/continuous-learning.md)
 - [Lifecycle](../01-operating-model/lifecycle.md) — where Build and Validate sit.
 - [Decision log](../templates/decision-log.md) — where traceable decisions are recorded.
+- Applied case: [Compostelle — Reuse feedback](../troubleshooting/compostelle-reuse-feedback/00-problem.md) — this practice on a real product fix.
 
 *First version — to be expanded with a Living Specification format and an Intent template.*

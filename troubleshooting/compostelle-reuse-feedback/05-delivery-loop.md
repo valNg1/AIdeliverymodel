@@ -1,0 +1,61 @@
+# 05 — Delivery Loop
+
+> Applied case — Compostelle. Operational trace of the iteration (not a retrospective).
+
+## Delivery Intent
+
+> Improve Reuse feedback so that after producing a sentence, the learner understands its quality, sees a minimally corrected version, receives the key corrections, and can try again.
+
+Scope is the **Reuse result experience** only — not a redesign of the learning flow.
+
+## Prototype used
+
+The four-example [prototype](01-ai-prototype.md); human-approved shape: assessment + correctedSentence + mainCorrections + idiomaticAlternative (target) + optional retry.
+
+## Hypothesis
+
+The engine already returns enough to satisfy most of the intent; the gap is that the result is not **structured and surfaced**. Idiomatic alternative is the exception (needs generation).
+
+## Technical diagnosis
+
+Confirmed in [gap analysis](04-gap-analysis.md): LanguageTool + deterministic fallback, no LLM. Qualitative correction present since #10/#19/#21; missing = unified assessment, plain corrected sentence, retry; idiomatic alternative not producible by the current engine.
+
+## Implementation decision
+
+Smallest coherent fix, **no new dependency**:
+
+- Add a pure domain view `reuseFeedback(answer, evaluation) → ReuseFeedback` mapping the existing 3-state `UseEvaluation` into `{ assessment, correctedSentence, mainCorrections, idiomaticAlternative?, retrySuggested }`.
+- `idiomaticAlternative` stays `undefined` (documented seam for a future generative corrector).
+- Wire it into the Reuse UI: assessment line, plain corrected sentence, retry button.
+
+## Files changed (Compostelle repo)
+
+| File | Change |
+|---|---|
+| `src/domain/learning.ts` | Add `ReuseCorrection`, `ReuseFeedback`, pure `reuseFeedback()`. |
+| `src/domain/reuseFeedback.test.ts` | New unit tests (5). |
+| `src/domain/i18n.ts` | New EN + FR keys (assessment ×3, corrected label, retry). |
+| `src/ui/LearningSession.tsx` | Render assessment + corrected sentence + retry from `reuseFeedback`. |
+
+## Tests added
+
+`reuseFeedback.test.ts` — 4 prototype scenarios (correct / understandable-incorrect / expression-missing / multi-issue) plus a test asserting `idiomaticAlternative` is undefined with the current engine (locks the documented limitation). Structure/semantics only — not brittle LLM prose.
+
+## Validation results
+
+- `tsc -b --noEmit`: clean.
+- `vitest run`: **272 passed** (was 267; +5 new). Existing 3-state contract and UI tests unaffected.
+- Verification method: typecheck + full test suite. Not visually demoed in a browser this iteration.
+
+## Deviations from prototype
+
+- `idiomaticAlternative` **not delivered** — proven engine limitation; deferred with the dependency documented, not added.
+- `score` intentionally kept secondary/absent on the result screen (it is a progression signal, not learner-facing feedback).
+
+## Unresolved questions
+
+- How to add the idiomatic alternative (which generative model, cost, latency, prompt, offline story).
+- Whether `mainCorrections` should carry per-change `original → corrected → explanation` (currently the correction *nature*).
+- Whether feedback depth should vary by learner level.
+
+➡️ Next: [06-learning-and-living-spec](06-learning-and-living-spec.md).

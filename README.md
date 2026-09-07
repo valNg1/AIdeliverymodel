@@ -114,6 +114,7 @@ AIdeliverymodel/
 ├── 06-learning-system/           # Continuous learning and maturity
 ├── templates/                    # Ready-to-fill working documents
 │   └── discovery/                # ⭐ Workshop canvas kit (run a Discovery session)
+├── troubleshooting/              # Applied cases — real fixes done with the model
 ├── examples/                     # Worked, generic examples
 └── prompts/                      # AI agent role prompts for Discovery + delivery-time prompts
 ```
@@ -139,6 +140,8 @@ If you are a **leader deciding whether to build or buy**, start with [00-vision/
 - **[France Judo — Excellence Judo LMS](examples/hazumi-excellence-judo/00-overview.md)** — a fictionalized case walking a business need from Intent through AI-native Discovery, the AI Impact Canvas, and a first delivery loop to a Living Specification. The best end-to-end illustration of how the practices fit together.
 - **[Specification churn in a language-learning product](examples/compostelle-specification-churn/00-overview.md)** — a fictionalized case showing the Intent-Based Development failure mode (local iteration on an undefined capability) and the Return-to-Intent remediation.
 - **[Automated reporting](examples/discovery/automated-reporting-example.md)** — a partially filled Discovery for the workshop kit.
+
+**[Troubleshooting — Applied Cases](troubleshooting/README.md):** real delivery problems solved with the AI Delivery Model, evolving with the fix. First case: [Compostelle — Reuse feedback](troubleshooting/compostelle-reuse-feedback/00-problem.md).
 
 ## Status and scope of v0.1
 
