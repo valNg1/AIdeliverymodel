@@ -14,11 +14,15 @@ Shared vocabulary for the AI Delivery Model. Terms are listed alphabetically. Ke
 
 - **Building block** — A shared, reusable component (technical or knowledge-based) assembled into products.
 
+- **Capability Intent** — The durable expected user behaviour for a capability: why, who, expected outcome, expected behaviour, critical constraints, and acceptance signal. Stable across many iterations. Distinct from Delivery Intent. See [03-delivery/intent-based-development.md](03-delivery/intent-based-development.md#two-levels-of-intent).
+
 - **Connector** — A reusable integration to a data source or external system.
 
 - **Continuous Design** — The principle that design is ongoing throughout the lifecycle, not a one-time upfront phase.
 
 - **Delivery as an Organizational Capability** — Treating the organization's ability to produce, operate, maintain, and evolve products as a strategic asset to grow.
+
+- **Delivery Intent** — What the current iteration is trying to learn, validate, or deliver. Lasts one iteration and serves — never replaces — the Capability Intent. See [03-delivery/intent-based-development.md](03-delivery/intent-based-development.md#two-levels-of-intent).
 
 - **Discovery** — The first lifecycle stage: understanding the need and its full impact before committing to Build.
 
@@ -50,6 +54,8 @@ Shared vocabulary for the AI Delivery Model. Terms are listed alphabetically. Ke
 
 - **Reference-Driven Delivery** — Building from proven references, patterns, and examples rather than from scratch.
 
+- **Return-to-Intent** — The remediation for specification churn: when delivery feedback repeatedly reopens the same behaviour, stop local iteration, cluster the recurring issues, and redefine the Capability Intent before resuming delivery. See [03-delivery/intent-based-development.md](03-delivery/intent-based-development.md#the-return-to-intent-branch).
+
 - **Reusable Building Blocks** — See *Building block*.
 
 - **Run** — See *Product Operations / Run*.
@@ -57,3 +63,5 @@ Shared vocabulary for the AI Delivery Model. Terms are listed alphabetically. Ke
 - **Single Product Ownership** — One accountable owner per product, end to end.
 
 - **Specialized AI role** — An AI analysis role with a defined scope (for example Business Analyst, Data Architect, Solution Architect, Security Reviewer, Product Operations Lead, Delivery Lead).
+
+- **Specification Churn** — Motion without convergence: repeatedly shipping local fixes for the same behaviour because the underlying Capability Intent is undefined. A signal to apply Return-to-Intent. See [03-delivery/intent-based-development.md](03-delivery/intent-based-development.md#failure-mode--local-iteration-on-an-undefined-capability).

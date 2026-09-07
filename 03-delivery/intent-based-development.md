@@ -48,6 +48,33 @@ The initial Intent is a **Minimum Viable Specification**, not a vague idea. It i
 
 The Intent is the seed of the [Living Specification](#living-specification), not a throwaway. Everything the specification later becomes should trace back to it.
 
+## Two levels of Intent
+
+Not all Intent is the same size. Confusing the two levels is the root of the [failure mode below](#failure-mode--local-iteration-on-an-undefined-capability). Keep them explicit and separate.
+
+| | **Product / Capability Intent** | **Delivery Intent** |
+|---|---|---|
+| **Purpose** | Define the *durable* expected user behaviour for a capability. | Define what the *current iteration* is trying to learn, validate, or deliver. |
+| **Lifespan** | Stable across many iterations. | One iteration. |
+| **Contains** | Why · Who · Expected outcome · Expected behaviour · Critical constraints · Success / acceptance signal. | The slice, the question it answers, and how success will be judged this loop. |
+| **Example** | *Sentence production feedback:* after submitting a sentence, the learner understands whether it is acceptable, what to change, sees a corrected version, and can retry. | *"For this iteration, connect a correction engine and validate whether the returned feedback is usable by learners."* |
+
+The relationship is a hierarchy, not a sequence of equals:
+
+```
+Product / Capability Intent   (durable — the behaviour we owe the user)
+        │
+        ▼
+   Delivery Intent            (one iteration — what we validate now)
+        │
+        ▼
+      Build ─▶ Demo ─▶ Feedback ─▶ Living Specification ─▶ Next Delivery Intent
+                                          ▲                        │
+                                          └────────────────────────┘
+```
+
+> **Delivery Intent must never replace Product / Capability Intent.** A stream of Delivery Intents that has lost sight of a stable Capability Intent is exactly how [specification churn](#failure-mode--local-iteration-on-an-undefined-capability) begins.
+
 ## Intent Readiness Gate
 
 Before development starts, an **Intent Readiness Gate** confirms the Intent is ready to build against. It is a lightweight human check, not a phase. The gate passes when:
@@ -95,6 +122,81 @@ Once the Intent is ready, delivery runs in short loops. Each loop improves **bot
 
 The loop is the same reflex as [Continuous Design](continuous-design.md), applied to the specification itself: the spec is never "done," it tracks the product.
 
+### The Return-to-Intent branch
+
+Not all feedback is equal. Most feedback is *normal learning* — refine the spec and continue. But some feedback keeps reopening the **same behaviour**: that is not progress, it is a signal that the Capability Intent underneath is undefined. The loop must branch on it.
+
+```
+        Product / Capability Intent
+                    │
+             Readiness Gate
+                    │
+             Delivery Intent
+                    │
+                  Build
+                    │
+                  Demo
+                    │
+                Feedback
+                /        \
+          normal          repeated ambiguity
+         learning         (same behaviour reopens)
+            │                     │
+     update Living         RETURN TO INTENT
+      Specification        (stop local iteration,
+            │               consolidate issues,
+            │               redefine behaviour,
+            │               update Living Spec)
+             \                   /
+              ▼                 ▼
+                  next loop
+```
+
+- **Normal learning** → capture knowledge, update the [Living Specification](#living-specification), continue to the next iteration.
+- **Repeated ambiguity** → **stop local iteration and return to the Capability Intent**: consolidate the recurring issues, redefine the expected behaviour, update the Living Specification, then resume delivery with a fresh Delivery Intent.
+
+The mechanics of when to take the branch are in [Failure mode](#failure-mode--local-iteration-on-an-undefined-capability).
+
+## Failure mode — Local iteration on an undefined capability
+
+Fast local iteration has a specific way of going wrong.
+
+- AI makes iterations cheaper and faster.
+- But cheaper iteration is not only cheaper *good* iteration.
+
+> **AI makes iteration cheaper, therefore it also makes bad iteration cheaper.**
+
+When a capability's expected behaviour was never defined, a team can keep shipping small enhancements that each look reasonable, while the underlying user behaviour stays undefined. The same complaint returns in new wording. Each fix treats a symptom; none closes the gap. The result is **specification churn**: motion without convergence.
+
+Repeated issues on the *same behaviour* are therefore not a backlog — they are a signal of a specification gap at the **Capability Intent** level.
+
+**Guardrail**
+
+> **Do not iterate locally on an undefined capability.**
+
+**Remediation rule**
+
+> **When delivery feedback repeatedly reopens the same behaviour, stop the delivery loop and return to Intent.**
+
+This is the [Return-to-Intent branch](#the-return-to-intent-branch): the fix is not another local iteration, it is to raise the question one level, to the Capability Intent.
+
+### Diagnosing repeated issues
+
+A practical signal, not a hard rule:
+
+> **Repeated issue = possible specification gap.**
+
+When roughly **2–3 issues** keep concerning the same user behaviour (the exact count is a prompt to look, not a threshold to obey):
+
+1. stop treating them independently;
+2. cluster them;
+3. identify the underlying capability;
+4. revisit the **Capability Intent** and clarify the expected behaviour;
+5. update the [Living Specification](#living-specification) and its acceptance criteria;
+6. only then create the *minimum* implementation work needed.
+
+Worked through end to end: [Specification churn in a language-learning product](../examples/compostelle-specification-churn/00-overview.md).
+
 ## Living Specification
 
 The specification becomes a **Living Specification** that evolves alongside the product. It is maintained continuously, not reconstructed at the end. Over time the repository progressively captures:
@@ -139,6 +241,8 @@ Humans own the Intent and every decision the specification records. In this prac
 ## Guardrails
 
 - **Intent must be structured and explicit.** A vague idea is not an Intent; it fails the readiness gate.
+- **Do not iterate locally on an undefined capability.** If the [Capability Intent](#two-levels-of-intent) is unclear, no amount of local iteration will converge — define the behaviour first.
+- **When feedback repeatedly reopens the same behaviour, return to Intent.** Recurring issues are a specification gap, not a backlog (see [Failure mode](#failure-mode--local-iteration-on-an-undefined-capability)).
 - **AI must not invent missing business decisions.** When a decision is missing, AI flags it for the Decision Owner — it does not guess and proceed.
 - **Humans remain responsible for validation and arbitration.** The loop never closes on an AI-only sign-off.
 - **Significant changes must be traceable.** Changes to rules, scope, or decisions are recorded with rationale.
