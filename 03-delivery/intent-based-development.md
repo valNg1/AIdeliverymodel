@@ -211,6 +211,23 @@ When roughly **2–3 issues** keep concerning the same user behaviour (the exact
 
 Worked through end to end: [Specification churn in a language-learning product](../examples/compostelle-specification-churn/00-overview.md).
 
+## Human acceptance and the Demo Agent
+
+A commit is not the end of a loop — a human decision is. Every AI-generated commit that reaches validation ends with a **Human Acceptance Canvas**: a single file that tells the Product Owner where to go, what to do, what to observe, what to decide, and what happens next.
+
+```
+Commit → Test Agent → Test Book → Demo Agent → Human Acceptance Canvas → Human decision → ACCEPT / FOLLOW-UP / REJECT
+```
+
+The **Demo Agent** produces it after each commit. Inputs: the commit, the [Test Book], the user-visible behaviour (Demo Pack), and the unresolved `HUMAN VALIDATION REQUIRED` items. Outputs: a Demo Pack and the Human Acceptance Canvas. Template: [human-acceptance-canvas.md](../templates/human-acceptance-canvas.md).
+
+- **Every AI-generated commit must end with a clear human validation mission.**
+- **The human validates product judgement, not automated testing** — never re-ask a human to confirm what a passing test already proved.
+
+The decision routes the next step: ACCEPT → the Learning Agent updates the Living Specification; ACCEPT WITH FOLLOW-UP → accept plus follow-up issues; REJECT → reopen the [delivery loop](#delivery-loop). Applied example: [Compostelle Human Acceptance Canvas](../troubleshooting/compostelle-reuse-feedback/08-human-acceptance-canvas.md).
+
+[Test Book]: ../troubleshooting/compostelle-reuse-feedback/07-test-book.md
+
 ## Living Specification
 
 The specification becomes a **Living Specification** that evolves alongside the product. It is maintained continuously, not reconstructed at the end. Over time the repository progressively captures:
