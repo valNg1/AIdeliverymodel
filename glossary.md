@@ -2,11 +2,19 @@
 
 Shared vocabulary for the AI Delivery Model. Terms are listed alphabetically. Keep this file consistent with usage across the repository.
 
+- **Agent 0** — The delivery-time context broker of the [AI-Ready Foundation](04-platform-and-governance/ai-ready-foundation.md#agent-0--context--orchestration): it discovers and connects to authorised sources, builds the Context Pack, preserves provenance, enforces access boundaries, and orchestrates handoffs between delivery agents. Not a data warehouse. Distinct from the Discovery-time *Orchestrator*.
+
 - **AI Delivery Model** — The operating model described in this repository: a repeatable way to turn a business need into a maintainable digital product by combining human expertise, AI, a knowledge base, and reusable building blocks.
 
 - **AI Impact Canvas** — The central Discovery deliverable. A single connected view that links a business need to its full Build and Run consequences across value, process, data, architecture, security, delivery, operations, ownership, cost, risks, and open questions. See [02-ai-discovery/ai-impact-canvas.md](02-ai-discovery/ai-impact-canvas.md).
 
 - **AI-native Discovery** — A Discovery approach that, from the start, connects business need to data, connectors, visualization, architecture, security, cost, delivery, and Run, so the business understands the downstream impact of its choices.
+
+- **AI-Ready** — The state in which an agent can reach the *right* information with clear ownership, known provenance, sufficient quality, permissions, metadata, context, stable identifiers, understandable schemas, and traceability. It does **not** mean centralising all company data. See [04-platform-and-governance/ai-ready-foundation.md](04-platform-and-governance/ai-ready-foundation.md#layer-4--ai-ready-data--context-layer).
+
+- **AI-Ready Context Contract** — The per-source description of what Agent 0 may rely on: interface (API / connector / MCP / view …), provenance, permissions, freshness, stable identifier, and quality guarantee. See [04-platform-and-governance/ai-ready-foundation.md](04-platform-and-governance/ai-ready-foundation.md#layer-4--ai-ready-data--context-layer).
+
+- **AI-Ready Foundation** — The layer that must exist before agents can be reliably activated: governed, connected, trusted, and accessible data and context. Enables — but does not replace — the delivery agents. See [04-platform-and-governance/ai-ready-foundation.md](04-platform-and-governance/ai-ready-foundation.md).
 
 - **Augmented workshop** — A Discovery workshop supported by specialized AI roles that analyze a shared corpus and produce specialized analyses for human consolidation.
 
@@ -20,11 +28,17 @@ Shared vocabulary for the AI Delivery Model. Terms are listed alphabetically. Ke
 
 - **Continuous Design** — The principle that design is ongoing throughout the lifecycle, not a one-time upfront phase.
 
+- **Data Governance Map** — The AI-Ready Foundation output that records, per data domain used by a use case: owner, sensitivity, access, quality required, retention / compliance, and whether it may be exposed to agents. See [04-platform-and-governance/ai-ready-foundation.md](04-platform-and-governance/ai-ready-foundation.md#layer-1--data-governance).
+
+- **Data Relationship Map** — The output that records how sources cross: common keys / joins, duplication, conflicts, missing relationships, and the context an agent needs to interpret combined data. See [04-platform-and-governance/ai-ready-foundation.md](04-platform-and-governance/ai-ready-foundation.md#layer-2--data-discovery--crossing).
+
 - **Delivery as an Organizational Capability** — Treating the organization's ability to produce, operate, maintain, and evolve products as a strategic asset to grow.
 
 - **Delivery Intent** — What the current iteration is trying to learn, validate, or deliver. Lasts one iteration and serves — never replaces — the Capability Intent. See [03-delivery/intent-based-development.md](03-delivery/intent-based-development.md#two-levels-of-intent).
 
 - **Discovery** — The first lifecycle stage: understanding the need and its full impact before committing to Build.
+
+- **Environment Adapter** — The swappable component that connects one concrete system (a specific CRM, Git host, ticketing tool…) to the AI-Ready Context Layer through a stable contract. Keeps ADM agents portable: swap the adapter, keep the agents. See [04-platform-and-governance/ai-ready-foundation.md](04-platform-and-governance/ai-ready-foundation.md#environment-adapters).
 
 - **Human + AI Delivery Team** — A delivery team where AI participates in defined roles alongside humans, who retain validation and decision authority.
 
@@ -61,6 +75,8 @@ Shared vocabulary for the AI Delivery Model. Terms are listed alphabetically. Ke
 - **Run** — See *Product Operations / Run*.
 
 - **Single Product Ownership** — One accountable owner per product, end to end.
+
+- **Source of Truth** — For a critical information domain, the source declared authoritative — as opposed to the duplicated copies (local Excel files, email attachments, shadow data) that must be eliminated or governed. Recorded in the Source of Truth Map. See [04-platform-and-governance/ai-ready-foundation.md](04-platform-and-governance/ai-ready-foundation.md#layer-3--single-source-of-truth).
 
 - **Specialized AI role** — An AI analysis role with a defined scope (for example Business Analyst, Data Architect, Solution Architect, Security Reviewer, Product Operations Lead, Delivery Lead).
 

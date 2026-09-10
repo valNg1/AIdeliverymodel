@@ -31,4 +31,11 @@ The agent model defines the specialized AI roles used in the augmented Discovery
 
 > **AI produces the analyses. Humans build consensus and make decisions.**
 
+## Orchestrator vs Agent 0
+
+Two different broker roles, easily confused:
+
+- The **Orchestrator** (above) is a *Discovery-time* role: it consolidates specialist **analyses** into the AI Impact Canvas and flags conflicts.
+- **Agent 0** is a *delivery-time* **context** broker in the [AI-Ready Foundation](../04-platform-and-governance/ai-ready-foundation.md#agent-0--context--orchestration): it discovers and connects to authorised sources, builds the Context Pack, preserves provenance, enforces access boundaries, and orchestrates handoffs between delivery agents. It is **not** a data warehouse.
+
 See also: [../01-operating-model/human-ai-team-model.md](../01-operating-model/human-ai-team-model.md).

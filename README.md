@@ -95,6 +95,8 @@ AI agents also work inside a **declared execution budget**: effort, tool calls, 
 
 Delivery itself starts from a structured **Intent** rather than a frozen spec, and grows a **Living Specification** through short loops — *Intent before Build. Specification through Delivery.* See [03-delivery/intent-based-development.md](03-delivery/intent-based-development.md).
 
+Before agents can be activated, ADM checks that data and context are governed, connected, trusted, and accessible — the **AI-Ready Foundation**. *Before becoming AI-native, become sufficiently AI-ready; no agent is better than the context it can reliably access.* Readiness is a **gate, not always a project**. See [04-platform-and-governance/ai-ready-foundation.md](04-platform-and-governance/ai-ready-foundation.md) and the [Data Readiness Canvas](templates/data-readiness-canvas.md).
+
 ## Repository structure
 
 ```
@@ -109,7 +111,7 @@ AIdeliverymodel/
 ├── 01-operating-model/           # The operating model and lifecycle
 ├── 02-ai-discovery/              # AI-native Discovery and the AI Impact Canvas
 ├── 03-delivery/                  # Delivery practices (intent, knowledge, references, design, agent budget)
-├── 04-platform-and-governance/   # Platform foundations, security, governance
+├── 04-platform-and-governance/   # Platform foundations, AI-ready foundation, security, governance
 ├── 05-product-operations/        # Run, observability, maintenance, ownership
 ├── 06-learning-system/           # Continuous learning and maturity
 ├── templates/                    # Ready-to-fill working documents
