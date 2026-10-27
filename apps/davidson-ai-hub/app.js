@@ -2,7 +2,7 @@ const projects=[
 {id:'adm',name:'AI Delivery Model',status:'In development',cls:'',progress:78,req:'120 / 150',tests:92,deliveries:6,desc:'A reusable operating model to industrialize AI delivery across business units.',icon:'⛓'},
 {id:'everskills',name:'EverSKILLS',status:'In prototyping',cls:'proto',progress:35,req:'28 / 80',tests:64,deliveries:4,desc:'AI-powered post-training activation and skills development.',icon:'🎓'},
 {id:'everinsight',name:'EverINSIGHT',status:'In development',cls:'',progress:62,req:'95 / 140',tests:88,deliveries:5,desc:'Learning profile, DISC insight and actionable development plan.',icon:'▥'},
-{id:'academy',name:'Davidson Academy',status:'In production',cls:'prod',progress:100,req:'42 / 42',tests:98,deliveries:8,desc:'Training resources, learning pathways and reusable best practices.',icon:'◉'},
+{id:'academy',name:'Everboarding Academy',status:'In production',cls:'prod',progress:100,req:'42 / 42',tests:98,deliveries:8,desc:'Training resources, learning pathways and reusable best practices.',icon:'◉'},
 {id:'compostel',name:'Compostel',status:'In discovery',cls:'discovery',progress:48,req:'36 / 75',tests:74,deliveries:5,desc:'Mobile language-learning product using AI to explain, practice and improve expressions.',icon:'✦'},
 {id:'hub',name:'AI Hub',status:'In prototyping',cls:'proto',progress:52,req:'64 / 120',tests:82,deliveries:3,desc:'Portfolio control tower for ADM delivery, governance and industrialization handover.',icon:'⬡'}];
 
@@ -44,7 +44,8 @@ const onboarding=[
 ['There are no wrong answers, only hypotheses to test','No perfection expected. Prototype early. Learn fast. Stabilise the model one iteration at a time.','Let’s start']];
 
 function projectCard(p){
- return '<article class="project card"><div class="project-title"><div class="iconbox">'+p.icon+'</div><div><h3>'+p.name+'</h3><span class="status '+p.cls+'">'+p.status+'</span></div></div><p>'+p.desc+'</p><div class="metrics"><div><b>'+p.progress+'%</b><small>Progress</small></div><div><b>'+p.req+'</b><small>Requirements</small></div><div><b>'+p.tests+'%</b><small>Test coverage</small></div><div><b>'+p.deliveries+'</b><small>Deliveries</small></div></div><div class="progress"><span style="width:'+p.progress+'%"></span></div><div class="foot"><small>Last activity: recent</small><button class="open" data-open-project>Open →</button></div></article>';
+ const url=(window.EVERBOARDING_LOCAL_APPS||{})[p.id]||"#";
+ return '<article class="project card"><div class="project-title"><div class="iconbox">'+p.icon+'</div><div><h3>'+p.name+'</h3><span class="status '+p.cls+'">'+p.status+'</span></div></div><p>'+p.desc+'</p><div class="metrics"><div><b>'+p.progress+'%</b><small>Progress</small></div><div><b>'+p.req+'</b><small>Requirements</small></div><div><b>'+p.tests+'%</b><small>Test coverage</small></div><div><b>'+p.deliveries+'</b><small>Deliveries</small></div></div><div class="progress"><span style="width:'+p.progress+'%"></span></div><div class="foot"><small>Last activity: recent</small><a class="open" href="'+url+'" target="_blank" rel="noopener">Open ↗</a></div></article>';
 }
 document.getElementById('project-grid').innerHTML=projects.map(projectCard).join('');
 
@@ -63,7 +64,7 @@ function showPage(id){
  window.scrollTo(0,0);
 }
 document.querySelectorAll('nav button').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
-document.querySelectorAll('[data-open-project]').forEach(b=>b.addEventListener('click',()=>showPage('project')));
+
 
 document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>{
  document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('active'));
