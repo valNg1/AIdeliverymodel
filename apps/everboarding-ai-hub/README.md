@@ -1,33 +1,51 @@
-# Everboarding AI Hub — MVP
+# Everboarding AI Hub
 
-This app turns the AI Delivery Model into a portfolio and delivery control tower.
+Private operational workspace for the AI Delivery Model.
 
-## Scope included
+Target URL: `https://hub.everboarding.fr`
 
-- Home / portfolio dashboard
-- Project workspace with Summary, Specifications, Requirements, Deliveries, AI Usage and Handover
-- ADM workflow and human gates
-- Living requirement statuses
-- Full methodology area with 13 phases
-- Architecture page
-- Everboarding design system page
-- Portfolio AI usage view
-- Executive presentation (10 screens)
-- Product Owner onboarding presentation (8 screens)
-- Ready-for-industrialization handover gate
+## Purpose
 
-## Run locally
+The Hub is the enterprise control tower. It contains operational information that should not be exposed on the public ADM showcase:
 
-```powershell
-cd apps\everboarding-ai-hub
-python -m http.server 8080
-```
+- portfolio and project status;
+- specifications and living requirements;
+- deliveries and test evidence;
+- AI usage;
+- Human Acceptance and handover;
+- Organizational Design / Factory operating model;
+- architecture and industrialization readiness.
 
-Open `http://localhost:8080`.
+The public method and client/partner onboarding experience lives separately in:
 
-No package installation is required.
+`apps/adm-site` → `https://adm.everboarding.fr`
 
-## Hosting
+## Local preview
 
-The MVP is static HTML/CSS/JS and can later be hosted under the Everboarding/Vercel environment. The next iteration should replace demo project data with GitHub/API-backed project descriptors while keeping the UI contracts stable.
-\n## Local app links\n\nEdit `local-apps.js` to point each project card to the corresponding local application URL/port. The **Open** action launches that local app in a new browser tab.\n
+Open this folder in VS Code and use Live Server.
+
+## Local project links
+
+Edit `local-apps.js` to configure the local URL/port behind each **Open** action.
+
+## Deployment
+
+Create a dedicated Vercel project with this folder as project root:
+
+`apps/everboarding-ai-hub`
+
+Attach the custom domain:
+
+`hub.everboarding.fr`
+
+## Access control
+
+This application is intended to be private. Authentication must be enforced at deployment before real project/client data is connected.
+
+Recommended target:
+1. Everboarding/Supabase authentication or approved enterprise SSO;
+2. server-side authorization for project access;
+3. no secrets or client data embedded in static JavaScript;
+4. GitHub/API credentials stored server-side only.
+
+The current MVP uses demonstration data and is safe to preview locally.
